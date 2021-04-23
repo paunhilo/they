@@ -1,0 +1,20 @@
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:they-nogender.fr
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?they-nogender.fr
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:they-nogender.fr
+
+RewriteRule ^$ /index.html [L]
+RewriteRule ^team$ /team.html [L]
+RewriteRule ^collection$ /collection.html [L]
+RewriteRule ^concept$ /concept.html [L]
+RewriteRule ^team/antoine /team/antoine.html [L]
+RewriteRule ^team/guyom /team/guyom.html [L]
+RewriteRule ^team/louise /team/louise.html [L]
+RewriteRule ^team/paul /team/paul.html [L]
+RewriteRule ^team/perine /team/perine.html [L]
+RewriteRule ^team/romane /team/romane.html [L]
+RewriteRule ^team/salomee /team/salomee.html [L]
+RewriteRule ^team/cecile /team/cecile.html [L]
